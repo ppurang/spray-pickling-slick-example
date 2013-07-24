@@ -1,0 +1,14 @@
+# sbt
+.history
+boot/
+lib_managed/
+target/
+
+# IntelliJ
+.idea/
+.idea_modules/
+out/
+*.iml
+*.ipr
+*.iws
+
