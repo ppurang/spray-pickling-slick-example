@@ -1,3 +1,5 @@
+import com.typesafe.sbt.SbtStartScript
+
 organization := "com.foo"
 
 name := "bla"
@@ -5,6 +7,8 @@ name := "bla"
 version := "1.0.0"
 
 scalaVersion := "2.10.2"
+
+mainClass in (Compile, run) := Some("com.foo.Bla")
 
 resolvers += "spray repo" at "http://repo.spray.io"
 
@@ -31,3 +35,4 @@ seq(Revolver.settings: _*)
 
 logBuffered := false
 
+seq(SbtStartScript.startScriptForClassesSettings: _*)

@@ -1,5 +1,7 @@
 addSbtPlugin("com.typesafe.sbt" % "sbt-atmos" % "0.1.1")
 
+addSbtPlugin("com.typesafe.sbt" % "sbt-start-script" % "0.8.0")
+
 resolvers += "spray repo" at "http://repo.spray.io"
 
 addSbtPlugin("io.spray" % "sbt-revolver" % "0.7.0")
